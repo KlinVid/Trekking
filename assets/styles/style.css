@@ -1,0 +1,423 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    color: #424242;
+    line-height: 1.2;
+}
+
+/* container */
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.inner__container{
+    width: 100%;
+    max-width: 1095px;
+    margin: 0 auto;
+}
+
+.about__container{
+    width: 100%;
+    max-width: 713px;
+    margin: 0 auto;
+    padding: 75px 0;
+}
+
+/* section */
+.section.white--gray{
+    background: #f5f6f7;
+}
+
+.section--women{
+    margin-bottom: 90px;
+}
+
+.section.brown{
+    background-color: #aa9b77;
+}
+
+.section.light--dark{
+    background-color: #535253;
+}
+
+.footer{
+    background-color: #424242;
+}
+
+/* header */
+.header{
+    position: absolute;
+    width: 100%;
+    padding-top: 40px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo{
+    padding-left: 65px;
+}
+
+/* nav */
+.nav{
+    text-transform: uppercase;
+}
+
+.nav__link{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 60px;
+}
+
+/* intro */
+.intro{
+    display: flex;
+    width: 100%;
+    background: url(../images/intro.png)center no-repeat;
+    background-size: cover;
+}
+
+.intro__inner{
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    max-width: 810px;
+    margin: 320px auto 0;
+    padding-bottom: 50px;
+}
+
+.intro__title{
+    margin-bottom: 25px;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.intro__text{
+    width: 100%;
+    max-width: 580px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 280px;
+}
+
+.intro__btn{
+    color: transparent;
+    text-decoration: none;
+}
+
+.intro__btn::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-left: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    margin: 0 auto;
+    transform: rotate(315deg);
+}
+
+/* products checkbox*/
+.products{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.checkbox__products{
+    display: flex;
+}
+
+.gender__products{
+    display: flex;
+    margin-right: 40px;
+}
+
+.checkbox__item{
+    height: 25px;
+    width: 25px;
+    display: none;
+}
+
+.checkbox__item + .label__checkbox::before {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 15px;
+    border-radius: 10%;
+    border: 2px solid #aa9b77;
+    height: 25px;
+    width: 25px;
+}
+
+
+.checkbox__item:checked + .label__checkbox::before {
+    content: "✓";
+    font-weight: bold;
+    font-size: 20px;
+    color: #aa9b77;
+    text-align: center;
+    background: #fff;
+    border: 2px solid #aa9b77;
+  }
+
+.label__checkbox{
+    font-size: 18px;
+    color: #333333;
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.button__products{
+    border: 0;
+    border-radius: 5px;
+    background-color: #aa9b77;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    font-size: 14px; 
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-weight: 700;
+    transition: background .2s linear;
+}
+
+.button__products:hover{
+    background-color: #ddc692;
+    cursor: pointer;
+}
+
+
+
+/* content */
+.products__content{
+    margin-top: 85px;
+}
+
+.title__content{
+    display: flex;
+}
+
+.title__box{
+    font-size: 20px;
+    color: rgb(66, 66, 66);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-right: 50px;
+}
+
+.title__box.women{
+    margin-left: 15px;
+}
+
+.line__box{
+    content: '';
+    background-color: #cccccc;
+    width: 100%;
+    height: 2px;
+    margin: 10px auto;
+}
+
+.toggle__content{
+    margin-top: 50px;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.toggle__content.women{
+    text-align: left;
+}
+
+.pages__content{
+    font-size: 16px;
+    color: rgb(170, 155, 119);
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.toggle__slider{
+    position: relative;
+}
+
+.btn__slider{
+    color: #aa9b77;
+    font-size: 20px;
+}
+
+.item__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item__content{
+    width: 320px;
+    height: 380px;
+    background-color: #f5f6f7;
+    
+}
+
+.item__content:hover{
+    border: 6px solid #aa9b77;
+}
+
+.fa-chevron-left, .fa-chevron-right{
+    transform: scale(1.2,0.7);
+}
+
+.parameters__content{
+    margin-left: 25px;
+    margin-top: 30px;
+    font-size: 16px;
+    color: rgb(66, 66, 66);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.card__content{
+    max-height: 100%;
+    height: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__content img:hover{
+    cursor: pointer;
+}
+
+.text__card{
+    display: flex;
+    justify-content: space-around;
+}
+
+.title__card{
+    font-size: 18px;
+    color: rgb(170, 155, 119);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+  
+.price__card {
+    font-size: 22px;
+    color: rgb(66, 66, 66);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+/* about */
+.about{
+    border: 2px solid #918363;
+    text-align: center;
+}
+  
+.about__title{
+    font-size: 20px;
+    color: rgb(131, 118, 89);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.about__title div{
+    height: 30px;
+    margin: 0 6px;
+}
+
+.about__text{
+    font-size: 16px;
+    color: rgb(66, 66, 66);
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 80px 120px 70px;
+}
+
+/* commerce */
+.commerce{
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.fa-twitter {
+  color: rgb(66, 66, 66);
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+.text__commerce{
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+/* trekking */
+
+.trekking__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 105px 0;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.title__trekking{
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.text__trekking{
+    width: 100%;
+    max-width: 310px;
+    font-size: 10px;
+    line-height: 2;
+}
+
+.info__text{
+    display: flex;
+}
+
+.info__text>div{
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-right: 2px solid #aa9b77;
+    padding: 0 7px;
+}
+
+.info__text>div:last-child{
+    border: 0;
+    padding-right: 0;
+}
+
+.author{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: right;
+    margin-top: 15px;
+    text-transform: initial;
+}
+  
