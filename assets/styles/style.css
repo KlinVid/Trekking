@@ -269,11 +269,15 @@ body{
     width: 320px;
     height: 380px;
     background-color: #f5f6f7;
+    border: 6px solid transparent;
     
 }
 
 .item__content:hover{
     border: 6px solid #aa9b77;
+    /* transform: scale(1.05);
+    box-shadow: 0 0 6px 6px #aa9b77; */
+    transition: border 0.2s linear;
 }
 
 .fa-chevron-left, .fa-chevron-right{
